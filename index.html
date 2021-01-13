@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Password Generator</title>
+		<link rel="stylesheet" type="text/css" href="password_generator.css"/>
+		<script src="password_generator.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h2>Password Generator</h2>
+			<div class="main">
+				<h3>Enter the Password Criteria: </h3><br>
+				<div class="dispTable">
+					<div class="dispTableRow">
+						<label class="dispTableCell">Length of password:  </label> 
+						<input class="dispTableCell" type="number" min="8" placeholder="minimum 8 & maximum 25" name="" id="req_len"/>
+					</div>
+					<div class="dispTableRow">
+						<label class="dispTableCell">Upper Case letters:  </label> 
+						<input class="dispTableCell" type="number" min="0" placeholder="minimum 0" name="" id="req_up"/>
+					</div>
+					<div class="dispTableRow">
+						<label class="dispTableCell">Lower Case letters:  </label> 
+						<input class="dispTableCell" type="number" min="0" placeholder="minimum 0" name="" id="req_low"/>
+					</div>
+					<div class="dispTableRow">
+						<label class="dispTableCell">Number of Digits:  </label> 
+						<input class="dispTableCell" type="number" min="0" placeholder="minimum 0" name="" id="req_num"/>
+					</div>
+					<div class="dispTableRow">
+						<label class="dispTableCell">Number of Symbols:  </label> 
+						<input class="dispTableCell" type="number" min="0" placeholder="minimum 0" name="" id="req_sym"/>
+					</div>
+				</div></br>
+				<button onclick="create()"> Generate </button></br></br>
+				<div id="result"></div>
+			</div>
+	</body>
+</html>
