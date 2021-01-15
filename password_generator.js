@@ -5,16 +5,16 @@ function validate_input(inp){
 	if(inp.len <= 7 || inp.len >= 26){
 		return "\"Length of Password\" should be within the range of 8 to 25 characters.";
 	}
-	if(inp.min_up <= 0){
+	if(inp.min_up < 0){
 		return "\"Upper Case letter\" field can not be a negative number.";
 	}                                                         
-	if(inp.min_low <= 0){                                     
+	if(inp.min_low < 0){                                     
 		return "\"Lower Case letter\" field can not be a negative number.";
 	}                                                         
-	if(inp.min_num <= 0){                                     
+	if(inp.min_num < 0){                                     
 		return "\"Number of Digits\" field can not be a negative number.";
 	}                                                         
-	if(inp.min_sym <= 0){                                     
+	if(inp.min_sym < 0){                                     
 		return "\"Number of Symbols\" field can not be a negative number.";
 	}
 	return "success";
